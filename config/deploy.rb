@@ -1,6 +1,6 @@
 set :user, 'apps'
-set :domain, 'skeleton.rails.wpsrv.net'
 set :application, 'rails-skeleton'
+set :domain, "#{application}.rails.wpsrv.net"
 
 # file paths
 set :repository,  "https://github.com/afirel/rails-skeleton.git"
