@@ -23,6 +23,8 @@ group :assets do
   gem 'coffee-rails', '~> 4.0.0'
 end
 
+gem 'bootstrap-sass', '~> 2.3.2.1'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
