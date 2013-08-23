@@ -77,4 +77,15 @@ RailsSkeleton::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Configure ActionMailer to use local SMTP
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { :host => 'rails-skeleton.wpsrv.net' }
+  config.action_mailer.smtp_settings = {
+    :address              => "localhost",
+    :port                 => 25,
+    :enable_starttls_auto => false
+  }
+
 end

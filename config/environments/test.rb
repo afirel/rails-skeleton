@@ -33,4 +33,9 @@ RailsSkeleton::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # Configure ActionMailer to put mails into local files
+  config.action_mailer.delivery_method = :file
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
