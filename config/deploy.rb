@@ -10,7 +10,7 @@ role :app, domain
 
 require "bundler/capistrano" # To pull in the Bundler Cap task
 require "rvm/capistrano"
-set :rvm_ruby_string, 'ruby-2.0.0-p247'
+set :rvm_ruby_string, 'ruby-2.0.0-p0'
 set :rvm_type, :user
 
 set :scm, :git
