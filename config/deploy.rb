@@ -29,3 +29,16 @@ namespace :deploy do
     run "touch #{current_path}/tmp/restart.txt"
   end
 end
+
+namespace :db do
+  # setup the database credentials via symlink
+  # see http://www.simonecarletti.com/blog/2009/06/capistrano-and-database-yml/
+  desc <<-DESC
+    [internal] Updates the symlink for database.yml file to the just deployed release.
+  DESC
+  task :symlink, :roles => [:app] do
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  end
+end
+
+before 'deploy:finalize_update', 'db:symlink', 'bundle:install'
