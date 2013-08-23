@@ -25,6 +25,8 @@ end
 
 gem 'bootstrap-sass', '~> 2.3.2.1'
 
+gem 'devise'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
