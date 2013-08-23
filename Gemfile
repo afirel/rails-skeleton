@@ -50,7 +50,6 @@ gem 'rvm-capistrano'
 # Use debugger
 group :development, :test do
   gem 'debugger'
-  gem 'rspec-rails'
 end
 
 group :development do
@@ -68,6 +67,8 @@ group :development do
 end
 
 group :test do
+  gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'simplecov'
+  gem 'fuubar'
 end
