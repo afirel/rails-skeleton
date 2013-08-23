@@ -7,6 +7,7 @@ set :repository,  "https://github.com/afirel/rails-skeleton.git"
 set :deploy_to, "/srv/apps/#{application}"
 
 role :app, domain
+role :web, domain
 
 require "bundler/capistrano" # To pull in the Bundler Cap task
 require "rvm/capistrano"
