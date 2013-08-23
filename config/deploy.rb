@@ -3,7 +3,7 @@ set :domain, 'skeleton.rails.wpsrv.net'
 set :application, 'rails-skeleton'
 
 # file paths
-set :repository,  "git@github.com:afirel/rails-skeleton.git"
+set :repository,  "https://github.com/afirel/rails-skeleton.git"
 set :deploy_to, "/srv/apps/#{application}"
 
 role :app, domain
