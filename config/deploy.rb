@@ -8,6 +8,7 @@ set :deploy_to, "/srv/apps/#{application}"
 
 role :app, domain
 role :web, domain
+role :db, domain, primary: true
 
 require "bundler/capistrano" # To pull in the Bundler Cap task
 require "rvm/capistrano"
@@ -43,3 +44,4 @@ namespace :db do
 end
 
 before 'deploy:finalize_update', 'db:symlink', 'bundle:install'
+before 'deploy:restart', 'deploy:migrate'
