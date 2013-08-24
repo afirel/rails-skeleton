@@ -60,7 +60,6 @@ group :development do
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
   gem 'rb-fchange', :require => false
-  gem 'ruby_gntp'
   gem 'pry-rails'
 
   gem 'guard'
@@ -75,4 +74,7 @@ group :test do
   gem 'database_cleaner'
   gem 'simplecov'
   gem 'fuubar'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'timecop'
 end
