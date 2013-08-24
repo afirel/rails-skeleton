@@ -10,8 +10,6 @@ gem 'pg'
 # gem 'sqlite3'
 
 group :assets do
-  # Use SCSS for stylesheets
-  gem 'sass-rails', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', platforms: :ruby
@@ -23,7 +21,9 @@ group :assets do
   gem 'coffee-rails', '~> 4.0.0'
 end
 
-gem 'bootstrap-sass', '~> 2.3.2.1'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :github => 'anjlab/bootstrap-rails'
 
 gem 'devise'
 
