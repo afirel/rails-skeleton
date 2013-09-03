@@ -59,7 +59,6 @@ group :development do
   gem 'rb-fsevent', :require => false
   gem 'rb-fchange', :require => false
   gem 'ruby_gntp'
-  gem 'pry-rails'
 
   gem 'guard'
   gem 'guard-bundler'
@@ -74,3 +73,5 @@ group :test do
   gem 'simplecov'
   gem 'fuubar'
 end
+
+gem 'pry-rails'
