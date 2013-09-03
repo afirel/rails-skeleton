@@ -60,7 +60,6 @@ group :development do
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
   gem 'rb-fchange', :require => false
-  gem 'pry-rails'
 
   gem 'guard'
   gem 'guard-bundler'
@@ -78,3 +77,5 @@ group :test do
   gem 'launchy'
   gem 'timecop'
 end
+
+gem 'pry-rails'
